@@ -1,5 +1,6 @@
 
 import './App.css';
+//import Just from './Just';
 
 
 import Step3 from './Step3';
@@ -14,8 +15,8 @@ import Step3 from './Step3';
 function App() {
   return (
     <div className="App">
+  
    <Step3></Step3>
-   
     </div>
   );
 }

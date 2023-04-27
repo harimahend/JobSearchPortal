@@ -47,7 +47,7 @@ const Step1=(props)=>{
       {/* Step 1 label */}
       <p className=" float-right text-secondary font-medium">Step 1</p>
       
-          <label className="text-left  font-bold block mb-2" htmlFor="location">
+          <label className="text-left  font-[#212121] block mb-2" htmlFor="location">
             Create a job
           </label> 
       {/* Form fields */}
@@ -134,7 +134,7 @@ const Step1=(props)=>{
         {/* Next button */}
 
       <div className="float-right text-secondary font-medium">
-     <button class="text-secondary  bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 roundedfloat-right text-secondary font-medium" 
+     <button class="text-secondary  bg-[#1597E4] hover:bg-[#1597E4] text-white font-bold py-2 px-4 roundedfloat-right text-secondary font-medium" 
       onClick={handleNextClick}>
          Next
      </button>

@@ -125,17 +125,18 @@ return(
           <label className="text-left font-bold block mb-2" htmlFor="location">
             Create a Job
           </label>
-          <div className='w-6'>&nbsp;</div>
-          </div>
+      <div className='w-6'>&nbsp;</div>
+    </div>
       {/* Form fields */}
     
     <div className="mb-4">
       <label className="text-left font-medium block mb-2 " htmlFor="job-title">
         Experience
       </label>
-      <div className='h-1'>&nbsp;</div>
-      <div className="flex flex-wrap -mx-4">
-      <div className="  w-full md:w-1/2 px-4 mb-4">
+     <div className='h-1'>&nbsp;</div>
+    <div className="flex flex-wrap -mx-4">
+
+       <div className="  w-full md:w-1/2 px-4 mb-4">
         
        <input
         className="appearance-none border rounded-md p-2 w-full border border-secondary rounded w-full py-2 px-3 text-secondary leading-tight focus:outline-none focus:border-primary"
@@ -151,8 +152,7 @@ return(
         className="appearance-none border rounded-md p-2 w-full border border-secondary rounded w-full py-2 px-3 text-secondary leading-tight focus:outline-none focus:border-primary"
         id="job-title"
         type="text"
-        placeholder="Maximum"  value={Experiencemax} onChange={handleExperiencemaxChange}
-        
+        placeholder="Maximum"  value={Experiencemax} onChange={handleExperiencemaxChange}     
       />
       </div>
       </div>
@@ -172,15 +172,13 @@ return(
           />
           </div>
          
-          <div className=" w-full md:w-1/2 px-4 mb-4">
+      <div className=" w-full md:w-1/2 px-4 mb-4">
            <input
         className="appearance-none border rounded-md p-2 w-full border border-secondary rounded w-full py-2 px-3 text-secondary leading-tight focus:outline-none focus:border-primary"
         id="job-title"
         type="text"
         placeholder="Maximum"  value={Salarymax} onChange={handleSalarymaxChange}
-        
-        
-      />
+          />
       </div>
          </div>
         </div>
@@ -223,7 +221,7 @@ return(
         </div>
         </div>
         <div className="float-right text-secondary font-medium">
-        <button class=" 	text-secondary bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" 
+        <button class=" 	text-secondary bg-[#1597E4] hover:bg-[#1597E4] text-white font-bold py-2 px-4 rounded" 
       onClick={handleSaveClick}>
         Save
      </button>

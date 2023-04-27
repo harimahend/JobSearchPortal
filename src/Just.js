@@ -41,7 +41,7 @@ function Just (){
       <div className='h-6'>&nbsp;</div>
       <div className="flex flex-wrap -mx-4">
       <div className="  w-full md:w-1/2 px-4 mb-4">
-      <button className=" whitespace-nowrap mt-2  float-left bg-blue-600 text-white px-6 py-2 rounded  hover:bg-blue-700 w-[118px] h-[40px]">
+      <button className=" whitespace-nowrap mt-2  float-left bg-[#1597E4] text-white px-6 py-2 rounded  hover:bg-[#1597E4] w-[118px] h-[40px]">
      Apply Now
       </button>  
       </div>
