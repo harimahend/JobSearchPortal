@@ -14,7 +14,7 @@ import Step3 from './Step3';
 function App() {
   return (
     <div className="App">
-   <Just></Just>
+   <Step3></Step3>
    
     </div>
   );
