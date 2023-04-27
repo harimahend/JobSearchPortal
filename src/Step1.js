@@ -48,7 +48,7 @@ const Step1=(props)=>{
       <p className=" float-right text-secondary font-medium">Step 1</p>
       
           <label className="text-left  font-bold block mb-2" htmlFor="location">
-            Create a job
+            Create a job.
           </label> 
       {/* Form fields */}
       <div className='w-6'>&nbsp;</div>
