@@ -48,7 +48,7 @@ const Step1=(props)=>{
       <p className=" float-right text-secondary font-medium">Step 1</p>
       
           <label className="text-left  font-bold block mb-2" htmlFor="location">
-            Create a job.
+            Create a job
           </label> 
       {/* Form fields */}
       <div className='w-6'>&nbsp;</div>
@@ -103,6 +103,7 @@ const Step1=(props)=>{
         </div>
         <div className='w-6'>&nbsp;</div>
         <div className='h-1'>&nbsp;</div>
+
         <div className="flex flex-wrap -mx-4">
         <div className=" w-full md:w-1/2 px-4 mb-4">
           <label className="text-left font-medium block mb-2" htmlFor="location">
@@ -116,7 +117,7 @@ const Step1=(props)=>{
             placeholder="ex. Chennai" value={location} onChange={handleLocationChange}
           />
         </div>
-        <div className='w-6'>&nbsp;</div>
+       
         <div className="  w-full md:w-1/2 px-4 mb-4">
           <label className="text-left font-medium block mb-2" htmlFor="remote-type">
             Remote Type
@@ -129,7 +130,7 @@ const Step1=(props)=>{
             placeholder="Enter remote type" value={remoteType} onChange= {handleremoteTypeChange}
           />
         </div>
-</div>
+        </div>
         {/* Next button */}
 
       <div className="float-right text-secondary font-medium">
