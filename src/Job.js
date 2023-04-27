@@ -7,6 +7,7 @@ const Job = (props) => {
   const [Salarymin, setSalarymin] = useState("");
   const [Salarymax, setSalarymax] = useState("");
   const [TotalEmployee, setTotalEmployee] = useState("");
+  const [quickApply, setQuickApply] = useState("");
 
   const handleExperienceminChange = (event) => {
     setExperiencemin(event.target.value);
@@ -25,6 +26,19 @@ const Job = (props) => {
   const handleTotalEmployeeChange = (event) => {
     setTotalEmployee(event.target.value);
   };
+ const handleExternalApplyClick =(event)=> {
+    setQuickApply(event.target.defaultValue);
+    console.log("I am working from external apply:"+event.target.defaultValue)
+  }
+
+  const handleApplyNowClick=(event)=> {
+    setQuickApply(event.target.defaultValue);
+    console.log("I am working from apply now :"+event.target.defaultValue)
+  }
+
+  
+ 
+    
 
   const handleSaveClick = () => {
     props.onSave();
@@ -39,7 +53,12 @@ const Job = (props) => {
       Salarymin: Salarymin,
       Salarymax: Salarymax,
       TotalEmployee: TotalEmployee,
+      quickApply : quickApply,
     };
+    
+    localStorage.setItem("quickApply", quickApply);
+
+   
     fetch("https://643aacc290cd4ba563fee2b3.mockapi.io/fetchdata", {
       method: "POST",
       headers: {
@@ -54,6 +73,8 @@ const Job = (props) => {
       .catch((error) => {
         console.error("Error:", error);
       });
+
+     
 
     return (
       <form onSubmit={handleSaveClick}>
@@ -214,25 +235,24 @@ const Job = (props) => {
                 <input
                   id="default-radio-1"
                   type="radio"
-                  value=""
-                  name="default-radio"
+                  value="Apply Now"
+                  name="default-radio" onChange={handleApplyNowClick}
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
                   for="default-radio-1"
                   class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  Quick apply
+                      <button >Quick Apply</button>
                 </label>
               </div>
             </div>
             <div className=" w-full md:w-1/2 px-4 mb-4">
               <div class="flex items-center">
                 <input
-                  checked
                   id="default-radio-2"
                   type="radio"
-                  value=""
+                  value="External Apply" onChange={handleExternalApplyClick}
                   name="default-radio"
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
@@ -240,8 +260,8 @@ const Job = (props) => {
                   for="default-radio-2"
                   class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  External apply
-                </label>
+                      <button  >External Apply</button> 
+                 </label>
               </div>
             </div>
           </div>

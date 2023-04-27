@@ -9,12 +9,22 @@ function Just() {
     axios
       .get("https://643aacc290cd4ba563fee2b3.mockapi.io/fetchdata")
       .then((response) => {
-        setJobs(response.data);
+        if(localStorage.getItem("quickApply") === "Apply Now"){
+          const applyNowJobs =response.data.filter(job => job.quickApply === "Apply Now");
+          setJobs(applyNowJobs);
+        }
+        else{
+          const applyNowJobs =response.data.filter(job => job.quickApply === "External Apply");
+          setJobs(applyNowJobs);
+        }
+         
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
+
+  
 
   return (
     <div className="   mt-4 mr-6 mb-4 ml-6 ">
