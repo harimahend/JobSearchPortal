@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const Job = (props) => {
+const JobsearchStep2 = (props) => {
   const [Experiencemin, setExperiencemin] = useState("");
   const [Experiencemax, setExperiencemax] = useState("");
   const [Salarymin, setSalarymin] = useState("");
@@ -279,4 +279,4 @@ const Job = (props) => {
   );
 };
 
-export default Job;
+export default JobsearchStep2;

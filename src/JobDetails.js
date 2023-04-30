@@ -3,7 +3,7 @@ import axios from "axios";
 import img1 from "./imge/download.png";
 import "./index.css"; // Import Tailwind styles
 
-function Just() {
+function JobDetails() {
   const [jobs, setJobs] = useState([]);
   useEffect(() => {
     axios
@@ -79,4 +79,4 @@ function Just() {
     </div>
   );
 }
-export default Just;
+export default JobDetails;

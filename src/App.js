@@ -3,7 +3,7 @@ import './App.css';
 //import Just from './Just';
 
 
-import Step3 from './Step3';
+import ProgressIndicator from './ProgressIndicator';
 
 
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
   
-   <Step3></Step3>
+   <ProgressIndicator></ProgressIndicator>
     </div>
   );
 }
