@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const JobsearchStep1 = (props) => {
+const JobsSearchStep1 = (props) => {
   const [jobTitle, setJobTitle] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [industry, setIndustry] = useState("");
@@ -158,4 +158,4 @@ const JobsearchStep1 = (props) => {
   );
 };
 
-export default JobsearchStep1;
+export default JobsSearchStep1;

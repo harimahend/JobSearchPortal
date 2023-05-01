@@ -19,9 +19,7 @@ function JobDetails() {
         }
          
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      
   }, []);
 
   

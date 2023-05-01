@@ -1,8 +1,9 @@
 import React from 'react';
-import JobsearchStep1 from './JobsearchStep1';
-import JobsearchStep2 from './JobsearchStep2';
+import JobsSearchStep1 from './JobsSearchStep1';
+import JobsSearchStep2 from './JobsSearchStep2';
 
 import JobDetails from './JobDetails';
+
 function ProgressIndicator() {
   const [step, setStep] = React.useState(1);
   
@@ -17,8 +18,8 @@ function ProgressIndicator() {
 
   return (
     <div>
-      {step === 1 && < JobsearchStep1 onNext={handleNext} />}
-      {step === 2 && <JobsearchStep2 onSave={handleSave} />}
+      {step === 1 && < JobsSearchStep1 onNext={handleNext} />}
+      {step === 2 && <JobsSearchStep2 onSave={handleSave} />}
       {step === 3 && <JobDetails />}
     </div>
   );

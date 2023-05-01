@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const JobsearchStep2 = (props) => {
+const JobssearchStep2 = (props) => {
   const [Experiencemin, setExperiencemin] = useState("");
   const [Experiencemax, setExperiencemax] = useState("");
   const [Salarymin, setSalarymin] = useState("");
@@ -28,12 +28,12 @@ const JobsearchStep2 = (props) => {
   };
  const handleExternalApplyClick =(event)=> {
     setQuickApply(event.target.defaultValue);
-    console.log("I am working from external apply:"+event.target.defaultValue)
+    
   }
 
   const handleApplyNowClick=(event)=> {
     setQuickApply(event.target.defaultValue);
-    console.log("I am working from apply now :"+event.target.defaultValue)
+   
   }
 
   
@@ -67,9 +67,7 @@ const JobsearchStep2 = (props) => {
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-      })
+      
       .catch((error) => {
         console.error("Error:", error);
       });
@@ -279,4 +277,4 @@ const JobsearchStep2 = (props) => {
   );
 };
 
-export default JobsearchStep2;
+export default JobssearchStep2;
